@@ -29,7 +29,7 @@ public class File {
     private String description;
 
     @Column(name = "file_content", nullable = false)
-    private byte[] fileContent;
+    private String fileContent;
 
     @Column(name = "title", nullable = false)
     private String title;
