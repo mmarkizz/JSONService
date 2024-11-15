@@ -1,5 +1,6 @@
 package com.example.JSONService.Entity;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
@@ -22,6 +23,7 @@ public class File {
     private Long id;
 
     @Column(name = "creation_date", nullable = false)
+    @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'")
     @CreationTimestamp
     private Timestamp creationDate;
 
@@ -33,6 +35,5 @@ public class File {
 
     @Column(name = "title", nullable = false)
     private String title;
-
 
 }
