@@ -29,7 +29,7 @@ public class FileController {
         return ResponseEntity.ok(file);
     }
 
-    public FileController(FileService fileService){//для метода получения всех данных
+    /*public FileController(FileService fileService){//для метода получения всех данных
         this.fileService=fileService;
     }
 
@@ -40,5 +40,5 @@ public class FileController {
             @RequestParam(defaultValue = "DESC") Sort.Direction sortDirection) {
         Page<File> files = fileService.getAllFiles(page, size, sortDirection);
         return ResponseEntity.ok(files);
-    }
+    }*/
 }

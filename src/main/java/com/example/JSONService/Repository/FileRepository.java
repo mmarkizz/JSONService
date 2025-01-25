@@ -9,6 +9,6 @@ import java.util.List;
 
 public interface FileRepository extends JpaRepository<File, Long> {
     List<File> findByTitle(String title);
-    Page<File> findAllByOrderByCreationDateDesc(Pageable pageable);//Для метода получения всех файлов
+    //Page<File> findAllByOrderByCreationDateDesc(Pageable pageable);//Для метода получения всех файлов
 
 }
